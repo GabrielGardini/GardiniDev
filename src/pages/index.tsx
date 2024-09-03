@@ -38,7 +38,7 @@ export default function Home() {
               // backdropFilter: "blur(10px)", // Adiciona o desfoque ao fundo
               borderTop: "2px solid white",
               mt: 35,
-              width: "100vw",
+              width: desktop ? "40vw" : "100vw",
               height: "90vh",
               borderTopLeftRadius: 60,
               borderTopRightRadius: 60,
