@@ -32,23 +32,23 @@ export default function Home() {
           <Card
             // className="vidro"
             sx={{
-              background: "#0979d483",
+              // background: "#0979d483",
+              backgroundColor: "rgba(9, 121, 212, 0.5)", // Fundo semi-transparente
               boxShadow: "0 8px 32px 0 #0a0549",
+              // backdropFilter: "blur(10px)", // Adiciona o desfoque ao fundo
               borderTop: "2px solid white",
-              borderBottom: "2px solid white",
-              mt: 25,
+              mt: 35,
               width: "100vw",
               height: "90vh",
               borderTopLeftRadius: 60,
               borderTopRightRadius: 60,
-              borderBottomLeftRadius: 60,
-              borderBottomRightRadius: 60,
               overflow: "visible",
               color: "white",
             }}
           >
             <Box
               sx={{
+                backdropFilter: "none",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -163,10 +163,11 @@ export default function Home() {
                 variant="contained"
                 sx={{
                   width: "60%",
-                  backgroundColor: "red",
+                  backgroundColor: "green",
                   color: "white",
                   fontFamily: "Poppins",
-                  my: 2,
+                  mt: 2,
+                  mb: 10,
                   fontSize: 20,
                   textTransform: "none",
                 }}
