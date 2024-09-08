@@ -52,7 +52,7 @@ export default function Home() {
               borderTop: "2px solid white",
               mt: 35,
               width: desktop ? "40vw" : "100vw",
-              height: "80vh",
+              height: "90vh",
               borderTopLeftRadius: 60,
               borderTopRightRadius: 60,
               overflow: "visible",
@@ -160,7 +160,7 @@ export default function Home() {
                 className="ghost-animation-button"
                 variant="contained"
                 sx={{
-                  width: "70%",
+                  width: "75%",
                   // backgroundColor: "#FF8C00",
                   color: "white",
                   fontFamily: "Poppins",
@@ -177,7 +177,7 @@ export default function Home() {
                 href="https://shpe.site/gardinidev"
                 target="_blank"
                 sx={{
-                  width: "70%",
+                  width: "75%",
                   backgroundColor: "#FF0000 ",
                   color: "white",
                   fontFamily: "Poppins",
@@ -195,7 +195,7 @@ export default function Home() {
                 href="https://github.com/GabrielGardini"
                 target="_blank"
                 sx={{
-                  width: "70%",
+                  width: "75%",
                   backgroundColor: "black ",
                   color: "white",
                   fontFamily: "Poppins",
