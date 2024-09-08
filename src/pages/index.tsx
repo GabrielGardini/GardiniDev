@@ -1,10 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 import SchoolIcon from "@mui/icons-material/School";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { Box, Button, Card, Typography, useMediaQuery } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  IconButton,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import Head from "next/head";
 import Image from "next/image";
-import { SiInstagram, SiTiktok, SiYoutube } from "react-icons/si";
+import {
+  SiGithub,
+  SiInstagram,
+  SiLinkedin,
+  SiTiktok,
+  SiYoutube,
+} from "react-icons/si";
 
 export default function Home() {
   const desktop = useMediaQuery("(min-width:900px)");
@@ -39,7 +52,7 @@ export default function Home() {
               borderTop: "2px solid white",
               mt: 35,
               width: desktop ? "40vw" : "100vw",
-              height: "90vh",
+              height: "80vh",
               borderTopLeftRadius: 60,
               borderTopRightRadius: 60,
               overflow: "visible",
@@ -89,14 +102,66 @@ export default function Home() {
               >
                 Aprenda Frontend todos os dias aqui!
               </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "60%",
+                }}
+              >
+                <IconButton
+                  href="https://www.tiktok.com/@gardini.dev"
+                  target="_blank"
+                  sx={{
+                    color: "white",
+                    // my: 2,
+                    // fontSize: 20,
+                  }}
+                >
+                  <SiTiktok fontSize={"30px"} />
+                </IconButton>
+                <IconButton
+                  href="https://www.instagram.com/gardinidev/"
+                  target="_blank"
+                  sx={{
+                    color: "white",
+                    // my: 2,
+                    // fontSize: 20,
+                  }}
+                >
+                  <SiInstagram fontSize={"30px"} />
+                </IconButton>
+                <IconButton
+                  href="https://www.youtube.com/@Gardinidev"
+                  target="_blank"
+                  sx={{
+                    color: "white",
+                    // my: 2,
+                    // fontSize: 20,
+                  }}
+                >
+                  <SiYoutube fontSize={"30px"} />
+                </IconButton>
+                <IconButton
+                  href="https://www.linkedin.com/in/gabrielgardini/"
+                  target="_blank"
+                  sx={{
+                    color: "white",
+                    // my: 2,
+                    // fontSize: 20,
+                  }}
+                >
+                  <SiLinkedin fontSize={"30px"} />
+                </IconButton>
+              </Box>
               <Button
                 href="https://go.hotmart.com/D93924915H"
                 target="_blank"
                 className="ghost-animation-button"
                 variant="contained"
                 sx={{
-                  width: "60%",
-                  // backgroundColor: "red",
+                  width: "70%",
+                  // backgroundColor: "#FF8C00",
                   color: "white",
                   fontFamily: "Poppins",
                   my: 2,
@@ -108,62 +173,30 @@ export default function Home() {
                 Aprenda Aqui!
               </Button>
               <Button
-                href="https://www.tiktok.com/@gardini.dev"
-                target="_blank"
                 variant="contained"
+                href="https://shpe.site/gardinidev"
+                target="_blank"
                 sx={{
-                  width: "60%",
-                  backgroundColor: "black",
+                  width: "70%",
+                  backgroundColor: "#FF0000 ",
                   color: "white",
                   fontFamily: "Poppins",
                   my: 2,
+                  // mb: 10,
                   fontSize: 20,
                   textTransform: "none",
                 }}
-                startIcon={<SiTiktok fontSize={"20px"} />}
+                startIcon={<ShoppingCartIcon />}
               >
-                TikTok
+                Melhore seu setup!
               </Button>
               <Button
-                href="https://www.instagram.com/gardinidev/"
+                variant="contained"
+                href="https://github.com/GabrielGardini"
                 target="_blank"
-                className="instaButton"
-                variant="contained"
                 sx={{
-                  width: "60%",
-                  backgroundColor: "red",
-                  color: "white",
-                  fontFamily: "Poppins",
-                  my: 2,
-                  fontSize: 20,
-                  textTransform: "none",
-                }}
-                startIcon={<SiInstagram fontSize={"20px"} />}
-              >
-                Instagram
-              </Button>
-              <Button
-                href="https://www.youtube.com/@Gardinidev"
-                target="_blank"
-                variant="contained"
-                sx={{
-                  width: "60%",
-                  backgroundColor: "red",
-                  color: "white",
-                  fontFamily: "Poppins",
-                  my: 2,
-                  fontSize: 20,
-                  textTransform: "none",
-                }}
-                startIcon={<SiYoutube fontSize={"20px"} />}
-              >
-                YouTube
-              </Button>
-              <Button
-                variant="contained"
-                sx={{
-                  width: "60%",
-                  backgroundColor: "green",
+                  width: "70%",
+                  backgroundColor: "black ",
                   color: "white",
                   fontFamily: "Poppins",
                   mt: 2,
@@ -171,9 +204,9 @@ export default function Home() {
                   fontSize: 20,
                   textTransform: "none",
                 }}
-                startIcon={<ShoppingCartIcon />}
+                startIcon={<SiGithub />}
               >
-                Produtos
+                Acesse meu Github
               </Button>
             </Box>
           </Card>
