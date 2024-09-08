@@ -52,7 +52,7 @@ export default function Home() {
               borderTop: "2px solid white",
               mt: 35,
               width: desktop ? "40vw" : "100vw",
-              height: "90vh",
+              height: "100vh",
               borderTopLeftRadius: 60,
               borderTopRightRadius: 60,
               overflow: "visible",
