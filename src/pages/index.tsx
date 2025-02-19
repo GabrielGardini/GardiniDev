@@ -194,7 +194,8 @@ export default function Home() {
               </Button>
               <Button
                 variant="contained"
-                href="https://shpe.site/gardinidev"
+                href="mailto:gardinidev@gmail.com"
+
                 target="_blank"
                 sx={{
                   top: -50,
@@ -214,7 +215,7 @@ export default function Home() {
               </Button>
               <Button
                 variant="contained"
-                href="mailto:gardinidev@gmail.com"
+                href="https://shpe.site/gardinidev"
                 target="_blank"
                 sx={{
                   top: -50,
