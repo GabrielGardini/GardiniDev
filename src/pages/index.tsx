@@ -76,8 +76,8 @@ export default function Home() {
               <Image
                 src="/foto3.png"
                 alt="foto"
-                width={400}
-                height={450}
+                width={440}
+                height={495}
                 style={{
                   borderTopLeftRadius: desktop ? 10 : 0,
                   borderTopRightRadius: desktop ? 10 : 0,
