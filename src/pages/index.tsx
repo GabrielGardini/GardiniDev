@@ -190,7 +190,7 @@ export default function Home() {
                 }}
                 startIcon={<SchoolIcon />}
               >
-                consiga sua vaga!
+                Consiga sua vaga!
               </Button>
               <Button
                 variant="contained"
