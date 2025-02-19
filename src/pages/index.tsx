@@ -51,7 +51,7 @@ export default function Home() {
               // backgroundColor: "rgba(9, 121, 212, 0.5)",
               // boxShadow: "0 8px 32px 0 #0a0549",
               // backdropFilter: "blur(10px)", // Adiciona o desfoque ao fundo
-              borderTop: "2px solid white",
+              // borderTop: "2px solid white",
               mt: desktop ? 35 : 0,
               width: desktop ? "50vw" : "100vw",
               height: "100vh",
@@ -106,25 +106,26 @@ export default function Home() {
                 >
                   Gardini Dev
                 </Typography>
-
-                <Typography
-                  variant={"subtitle1"}
-                  fontFamily={"Poppins"}
-                  textAlign={"center"}
-                  marginTop={1}
-                  marginBottom={1}
-                >
-                  Aprenda frontend e consiga sua primeira vaga de emprego!
-                </Typography>
+                <Box sx={{widht:"100%", marginY:1}}>
+                  <Typography
+                    variant={"subtitle1"}
+                    fontFamily={"Poppins"}
+                    textAlign={"center"}
+                    // marginTop={1}
+                    // marginBottom={1}
+                    // marginLeft={2}
+                    // marginRight={2}
+                  >
+                    Aprenda frontend e consiga sua<br></br> primeira vaga de emprego!
+                  </Typography>
+                </Box>
                 <Box
                   sx={{
                     display: "flex",
                     justifyContent: "space-around",
                     width: "100%",
-                 
                   }}
                 >
-            
                   <IconButton
                     href="https://www.tiktok.com/@gardini.dev"
                     target="_blank"
