@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Star } from "@mui/icons-material";
 import SchoolIcon from "@mui/icons-material/School";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import {
@@ -18,6 +19,7 @@ import {
   SiTiktok,
   SiYoutube,
 } from "react-icons/si";
+import { text } from "stream/consumers";
 
 export default function Home() {
   const desktop = useMediaQuery("(min-width:900px)");
@@ -42,21 +44,22 @@ export default function Home() {
             height: "100vh",
           }}
         >
-          <Card
+          <Box
             // className="vidro"
             sx={{
               // background: "#0979d483",
-              backgroundColor: "rgba(9, 121, 212, 0.5)", // Fundo semi-transparente
-              boxShadow: "0 8px 32px 0 #0a0549",
+              // backgroundColor: "rgba(9, 121, 212, 0.5)",
+              // boxShadow: "0 8px 32px 0 #0a0549",
               // backdropFilter: "blur(10px)", // Adiciona o desfoque ao fundo
               borderTop: "2px solid white",
-              mt: 35,
-              width: desktop ? "40vw" : "100vw",
+              mt: desktop ? 35 : 0,
+              width: desktop ? "50vw" : "100vw",
               height: "100vh",
-              borderTopLeftRadius: 60,
-              borderTopRightRadius: 60,
+              borderTopLeftRadius: desktop ? 60 : 0,
+              borderTopRightRadius: desktop ? 60 : 0,
               overflow: "visible",
-              color: "white",
+              color: "#ffffff",
+              // color: "#26314d",
             }}
           >
             <Box
@@ -67,119 +70,157 @@ export default function Home() {
                 justifyContent: "center",
                 alignItems: "center",
                 position: "relative",
-                paddingTop: 20,
+                paddingTop: desktop ? 5 : 0,
               }}
             >
               <Image
                 src="/foto3.png"
                 alt="foto"
-                width={235}
-                height={250}
+                width={400}
+                height={450}
                 style={{
-                  borderRadius: "50%",
-                  border: "2px solid white",
-                  position: "absolute",
-                  top: -130,
+                  borderTopLeftRadius: desktop ? 10 : 0,
+                  borderTopRightRadius: desktop ? 10 : 0,
                 }}
+                className="fade-image"
               ></Image>
-              <Typography
-                variant={"h3"}
-                fontFamily={"Poppins"}
-                sx={{
-                  color: "#ffffff",
-                  textShadow: "2px 2px 4px rgba(0, 0, 0, 5)",
-                }}
-              >
-                Gardini Dev
-              </Typography>
-
-              <Typography
-                variant={"subtitle1"}
-                fontFamily={"Poppins"}
-                textAlign={"center"}
-                marginTop={2}
-                marginBottom={2}
-              >
-                Aprenda Frontend todos os dias aqui!
-              </Typography>
               <Box
                 sx={{
+                  position: "relative",
+                  top: -80,
                   display: "flex",
-                  justifyContent: "space-between",
-                  width: "60%",
+                  justifyContent: "center",
+                  textAlign: "center",
+                  flexDirection: "column",
                 }}
               >
-                <IconButton
-                  href="https://www.tiktok.com/@gardini.dev"
-                  target="_blank"
+                <Typography
+                  variant={"h3"}
+                  fontFamily={"Poppins"}
                   sx={{
-                    color: "white",
-                    // my: 2,
-                    // fontSize: 20,
+                    color: "#ffffff",
+                    fontWeight: "bold",
+                    fontSize: 32,
+                    // textShadow: "2px 2px 4px rgba(0, 0, 0, 5)",
                   }}
                 >
-                  <SiTiktok fontSize={"30px"} />
-                </IconButton>
-                <IconButton
-                  href="https://www.instagram.com/gardinidev/"
-                  target="_blank"
+                  Gardini Dev
+                </Typography>
+
+                <Typography
+                  variant={"subtitle1"}
+                  fontFamily={"Poppins"}
+                  textAlign={"center"}
+                  marginTop={1}
+                  marginBottom={1}
+                >
+                  Aprenda frontend e consiga sua primeira vaga de emprego!
+                </Typography>
+                <Box
                   sx={{
-                    color: "white",
-                    // my: 2,
-                    // fontSize: 20,
+                    display: "flex",
+                    justifyContent: "space-around",
+                    width: "100%",
+                 
                   }}
                 >
-                  <SiInstagram fontSize={"30px"} />
-                </IconButton>
-                <IconButton
-                  href="https://www.youtube.com/@Gardinidev"
-                  target="_blank"
-                  sx={{
-                    color: "white",
-                    // my: 2,
-                    // fontSize: 20,
-                  }}
-                >
-                  <SiYoutube fontSize={"30px"} />
-                </IconButton>
-                <IconButton
-                  href="https://www.linkedin.com/in/gabrielgardini/"
-                  target="_blank"
-                  sx={{
-                    color: "white",
-                    // my: 2,
-                    // fontSize: 20,
-                  }}
-                >
-                  <SiLinkedin fontSize={"30px"} />
-                </IconButton>
+            
+                  <IconButton
+                    href="https://www.tiktok.com/@gardini.dev"
+                    target="_blank"
+                    sx={{
+                      color: "#ffffff",
+                      // my: 2,
+                      // fontSize: 20,
+                    }}
+                  >
+                    <SiTiktok fontSize={"30px"} />
+                  </IconButton>
+                  <IconButton
+                    href="https://www.instagram.com/gardinidev/"
+                    target="_blank"
+                    sx={{
+                      color: "#ffffff",
+                      // my: 2,
+                      // fontSize: 20,
+                    }}
+                  >
+                    <SiInstagram fontSize={"30px"} />
+                  </IconButton>
+                  <IconButton
+                    href="https://www.youtube.com/@Gardinidev"
+                    target="_blank"
+                    sx={{
+                      color: "#ffffff",
+                      // my: 2,
+                      // fontSize: 20,
+                    }}
+                  >
+                    <SiYoutube fontSize={"30px"} />
+                  </IconButton>
+                  <IconButton
+                    href="https://www.linkedin.com/in/gabrielgardini/"
+                    target="_blank"
+                    sx={{
+                      color: "#ffffff",
+                      // my: 2,
+                      // fontSize: 20,
+                    }}
+                  >
+                    <SiLinkedin fontSize={"30px"} />
+                  </IconButton>
+                </Box>
               </Box>
               <Button
-                href="https://go.hotmart.com/D93924915H"
+                href="https://go.hotmart.com/D97410048K"
                 target="_blank"
                 className="ghost-animation-button"
                 variant="contained"
                 sx={{
+                  top: -50,
                   width: "75%",
-                  // backgroundColor: "#FF8C00",
-                  color: "white",
+                  backgroundColor: "#ffffff",
+                  color: "#5a1096",
                   fontFamily: "Poppins",
+                  fontWeight: "bold",
                   my: 2,
                   fontSize: 20,
                   textTransform: "none",
                 }}
                 startIcon={<SchoolIcon />}
               >
-                Aprenda Aqui!
+                consiga sua vaga!
               </Button>
               <Button
                 variant="contained"
                 href="https://shpe.site/gardinidev"
                 target="_blank"
                 sx={{
+                  top: -50,
+
                   width: "75%",
-                  backgroundColor: "#FF0000 ",
-                  color: "white",
+                  backgroundColor: "#ffffff",
+                  color: "#5a1096",
+                  fontFamily: "Poppins",
+                  my: 2,
+                  // mb: 10,
+                  fontSize: 20,
+                  textTransform: "none",
+                }}
+                startIcon={<Star />}
+              >
+                Parcerias aqui!
+              </Button>
+              <Button
+                variant="contained"
+                href="https://shpe.site/gardinidev"
+                target="_blank"
+                sx={{
+                  top: -50,
+
+                  width: "75%",
+                  backgroundColor: "#ffffff",
+                  color: "#5a1096",
                   fontFamily: "Poppins",
                   my: 2,
                   // mb: 10,
@@ -195,9 +236,11 @@ export default function Home() {
                 href="https://github.com/GabrielGardini"
                 target="_blank"
                 sx={{
+                  top: -50,
+
                   width: "75%",
-                  backgroundColor: "black ",
-                  color: "white",
+                  backgroundColor: "#ffffff",
+                  color: "#5a1096",
                   fontFamily: "Poppins",
                   mt: 2,
                   mb: 10,
@@ -209,7 +252,7 @@ export default function Home() {
                 Acesse meu Github
               </Button>
             </Box>
-          </Card>
+          </Box>
         </Box>
       </main>
     </Box>

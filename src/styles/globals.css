@@ -3,9 +3,11 @@ body {
   overflow-x: hidden;
   height: 100vh;
   padding: 0;
-  background-image: url("/falling-stars.gif");
+  /* background-image: url("/foto3.png"); */
   background-size: cover;
-  background-position: center;
+  background-position: center; 
+  background-color: #5a1096;
+  /* color:#26314d; */
 }
 
 /* Configurações do input */
@@ -21,16 +23,21 @@ body {
   );
 }
 
+.fade-image {
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
+
 /* Animação do botão */
 
 @keyframes floatingButton {
   0%,
   100% {
-    transform: translateY(-2px) rotate(-2deg);
+    transform: scale(1) ;
   }
 
   50% {
-    transform: translateY(2px) rotate(2deg);
+    transform: scale(1.05) ;
   }
 }
 
