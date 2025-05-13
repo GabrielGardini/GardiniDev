@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Star } from "@mui/icons-material";
+import { RocketLaunch, Star } from "@mui/icons-material";
 import SchoolIcon from "@mui/icons-material/School";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import {
@@ -173,7 +173,7 @@ export default function Home() {
                 </Box>
               </Box>
               <Button
-                href="https://go.hotmart.com/D97410048K"
+                href="https://www.rocketseat.com.br/oferta/influencer/v2/gardinidev"
                 target="_blank"
                 className="ghost-animation-button"
                 variant="contained"
@@ -184,6 +184,26 @@ export default function Home() {
                   color: "#5a1096",
                   fontFamily: "Poppins",
                   fontWeight: "bold",
+                  my: 2,
+                  fontSize: 20,
+                  textTransform: "none",
+                }}
+                startIcon={<RocketLaunch />}
+              >
+                Rocketseat
+              </Button>
+              <Button
+                href="https://go.hotmart.com/D97410048K"
+                target="_blank"
+                // className="ghost-animation-button"
+                variant="contained"
+                sx={{
+                  top: -50,
+                  width: "75%",
+                  backgroundColor: "#ffffff",
+                  color: "#5a1096",
+                  fontFamily: "Poppins",
+                  // fontWeight: "bold",
                   my: 2,
                   fontSize: 20,
                   textTransform: "none",
