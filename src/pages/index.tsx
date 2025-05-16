@@ -173,7 +173,7 @@ export default function Home() {
                 </Box>
               </Box>
               <Button
-                href="https://www.rocketseat.com.br/oferta/influencer/v2/gardinidev"
+                href="/rocketseat"
                 target="_blank"
                 className="ghost-animation-button"
                 variant="contained"
