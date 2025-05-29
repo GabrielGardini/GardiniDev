@@ -127,7 +127,7 @@ export default function Home() {
                   }}
                 >
                   <IconButton
-                    href="https://www.tiktok.com/@gardini.dev"
+                    href="https://www.tiktok.com/@gardinidev"
                     target="_blank"
                     sx={{
                       color: "#ffffff",
