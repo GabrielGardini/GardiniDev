@@ -235,7 +235,7 @@ export default function Home() {
               </Button>
               <Button
                 variant="contained"
-                href="https://shpe.site/gardinidev"
+                href="https://mercadolivre.com/sec/24HZr17"
                 target="_blank"
                 sx={{
                   top: -50,
