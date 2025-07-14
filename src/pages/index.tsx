@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import Head from "next/head";
 import Image from "next/image";
+import { BiPencil } from "react-icons/bi";
 import {
   SiGithub,
   SiInstagram,
@@ -188,10 +189,11 @@ export default function Home() {
                   fontSize: 20,
                   textTransform: "none",
                 }}
-                startIcon={<RocketLaunch />}
+                startIcon={<BiPencil />}
               >
-                Rocketseat
+                Analise de Portfólio!
               </Button>
+              
               <Button
                 href="https://go.hotmart.com/D97410048K"
                 target="_blank"
@@ -211,6 +213,26 @@ export default function Home() {
                 startIcon={<SchoolIcon />}
               >
                 Consiga sua vaga!
+              </Button>
+              <Button
+                href="/rocketseat"
+                target="_blank"
+                className="ghost-animation-button"
+                variant="contained"
+                sx={{
+                  top: -50,
+                  width: "75%",
+                  backgroundColor: "#ffffff",
+                  color: "#5a1096",
+                  fontFamily: "Poppins",
+                  // fontWeight: "bold",
+                  my: 2,
+                  fontSize: 20,
+                  textTransform: "none",
+                }}
+                startIcon={<RocketLaunch />}
+              >
+                Rocketseat
               </Button>
               <Button
                 variant="contained"
