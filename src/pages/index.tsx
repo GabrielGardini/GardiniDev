@@ -174,7 +174,7 @@ export default function Home() {
                 </Box>
               </Box>
               <Button
-                href="/rocketseat"
+                href="https://forms.gle/yFVYLoxsa7tpN6zN8"
                 target="_blank"
                 className="ghost-animation-button"
                 variant="contained"
@@ -217,7 +217,7 @@ export default function Home() {
               <Button
                 href="/rocketseat"
                 target="_blank"
-                className="ghost-animation-button"
+                // className="ghost-animation-button"
                 variant="contained"
                 sx={{
                   top: -50,
