@@ -195,7 +195,7 @@ export default function Home() {
               </Button>
               
               <Button
-                href="https://go.hotmart.com/D97410048K"
+                href="https://go.hotmart.com/D97410048K?dp=1"
                 target="_blank"
                 // className="ghost-animation-button"
                 variant="contained"
@@ -212,7 +212,7 @@ export default function Home() {
                 }}
                 startIcon={<SchoolIcon />}
               >
-                Consiga sua vaga!
+                Consiga seu emprego!
               </Button>
               <Button
                 href="/rocketseat"
