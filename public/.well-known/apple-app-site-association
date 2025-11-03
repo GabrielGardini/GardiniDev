@@ -1,0 +1,30 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": ["BQ84H65DR2.mingau.Mingau"],
+             "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true,
+                  "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+               },
+               {
+                  "/": "/mingau/*",
+                  "comment": "Matches any URL with a path that starts with /mingau/."
+               },
+               {
+                  "/": "/rocketseat/*",
+                  "exclude": true,
+                  "comment": "Matches any URL with a path that starts with /rocketseat/ and instructs the system not to open it as a universal link."
+               },
+               {
+                  "/": "/",
+                  "exclude": true,
+                  "comment": "Matches the root URL and instructs the system not to open it as a universal link."
+               }
+             ]
+           }
+       ]
+   }
+}
